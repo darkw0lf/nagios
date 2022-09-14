@@ -41,7 +41,7 @@ ExitWarning = 1
 ExitCritical = 2
 ExitUnknown = 3
 
-connection=int(os.popen("netstat -antu | grep SYN_RECV | awk '{print $5}' | cut -d: -f1 | sort | uniq -c | sort -rn | grep -v 127.0.0.1 | wc -l").read())
+connection=int(os.popen("ss -antu | grep SYN_RECV | awk '{print $5}' | cut -d: -f1 | sort | uniq -c | sort -rn | grep -v 127.0.0.1 | wc -l").read())
 def check(opts):
     critical = opts.crit
     warning = opts.warn
