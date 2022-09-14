@@ -1,8 +1,8 @@
 #! /usr/bin/env python3
 
-__author__ = "\nAuthor: Raimundo Henrique da Silva Chipongue\nE-mail: fc48807@alunos.fc.ul.pt, chipongue1@gmail.com\nInstitution: Faculty of Science of the University of Lisbon\n"
+__author__ = "\nAuthor: D@rkW0lf"
 
-__version__= "1.0.0"
+__version__= "2.0.0"
 
 '''
 
