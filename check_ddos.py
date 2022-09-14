@@ -9,7 +9,7 @@ __version__= "2.0.0"
 Script to check the server accesses, and warn if an abnormal number of requests, indicating probable attempt to DDOS 
 
 Creation date: 14/01/2017
-Date last updated: 19/03/2017
+Date last updated: 14/09/2022
 
 * 
 * License: GPL
