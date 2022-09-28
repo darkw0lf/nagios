@@ -127,9 +127,9 @@ do
 		OS_TEMPLATE="windows-server"
 	elif [ `expr "$OS_SUMMARY" : ".*[Ss]witch.*"` != 0 ] 
 	then
-		OS_TEMPLATE="generic-switch"
+		OS_TEMPLATE="linux-server"
 	else
-		OS_TEMPLATE="generic-host"
+		OS_TEMPLATE="linux-server"
 	fi
 
 	# Generate host in the Nagios .cfg file
@@ -173,7 +173,7 @@ EOF
 # Service($host): $SERVICE_NAME
 # $SERVICE_DESCRIPTION
 define service{
-	use			generic-service
+	use			local-service
         host_name               $host
         service_description     $SERVICE_NAME
         check_command           $SERVICE_CHECK
